@@ -4,29 +4,27 @@
 
 #pragma once
 
+#include "../../lib/message/message.h"
 #include <pthread.h>
-#include "../message/message.h"
 
-typedef struct Node {
-    Message *msg;
-    struct Node *next;
-    struct Node *prev;
-} Node;
+typedef struct node_t {
+  message_t *msg;
+  struct node_t *next;
+  struct node_t *prev;
+} ch_node_t;
 
 typedef struct {
-    Node *head;
-    Node *tail;
-    pthread_mutex_t push_lock;
-    size_t size;
-} Channel;
+  ch_node_t *head;
+  ch_node_t *tail;
+  pthread_mutex_t push_lock;
+  size_t size;
+} chan_t;
 
-Channel *init_chan();
+chan_t *init_chan();
 
-void destroy_chan(Channel *chan);
-void push_msg_to_chan(Channel *chan, Message *msg);
+void destroy_chan(chan_t *chan);
+void push_msg_to_chan(chan_t *chan, message_t *msg);
 
-Message *pop_msg_from_chan(Channel *chan);
+message_t *pop_msg_from_chan(chan_t *chan);
 
-Message *front_msg_from_chan(Channel *chan);
-
-
+message_t *front_msg_from_chan(chan_t *chan);

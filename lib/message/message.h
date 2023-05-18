@@ -5,7 +5,7 @@
 #pragma once
 
 typedef struct {
-    char *user_name;
-    char *message;
-    char *date_time;
-}Message;
+  char *user_name;
+  char *message;
+  char *date_time;
+} message_t;

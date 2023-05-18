@@ -4,18 +4,17 @@
 
 #pragma once
 
-#include <stdio.h>
-#include <unistd.h>
-#include <stdlib.h>
-#include <stdbool.h>
 #include "../globals.h"
-
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
 
 typedef struct {
-    char name[MAX_LENGTH];
-    char ip_addr[MAX_LENGTH];
-} UserInfo;
+  char name[MAX_LENGTH];
+  char ip_addr[MAX_LENGTH];
+} user_info_t;
 
-short read_user_info(UserInfo *user);
+short read_user_info(user_info_t *user);
 
 short store_user_info(char *user_name, char *ip_addr);

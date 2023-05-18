@@ -3,13 +3,14 @@
 #include "ui/menu/menu.h"
 #include "ui/utils/utils.h"
 #include <stdio.h>
+#include "../lib/user_info/user_info.h"
 
 int main() {
   puts("Hello, welcome to my irc.");
   puts("Retrieving user info...");
 
-  UserInfo user;
-  ServerList *server_list;
+  user_info_t user;
+  server_list_t *server_list;
   Options opts;
   opts.should_save_user_info = false;
 

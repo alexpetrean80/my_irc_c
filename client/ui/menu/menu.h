@@ -4,10 +4,9 @@
 
 #pragma once
 
-
 #include "../../server/server_list/server_list.h"
 
+#include "../../../lib/user_info/user_info.h"
 #include "../../options.h"
-#include "user_info.h"
 
-void run_menu(ServerList *server_list, UserInfo *user, Options *opts);
+void run_menu(server_list_t *server_list, user_info_t *user, Options *opts);

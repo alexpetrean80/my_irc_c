@@ -1,1 +1,0 @@
-CMakeLists.txt not found in /home/padfoot/repos/my_irc_c Select CMakeLists.txt

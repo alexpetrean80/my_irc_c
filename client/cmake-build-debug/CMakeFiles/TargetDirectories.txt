@@ -1,0 +1,3 @@
+/home/alexp/Repos/my_irc_c/client/cmake-build-debug/CMakeFiles/client.dir
+/home/alexp/Repos/my_irc_c/client/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/alexp/Repos/my_irc_c/client/cmake-build-debug/CMakeFiles/rebuild_cache.dir

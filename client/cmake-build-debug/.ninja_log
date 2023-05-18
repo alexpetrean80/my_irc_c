@@ -1,0 +1,11 @@
+# ninja log v5
+1	32	1684418905389548878	build.ninja	f37cb806a70445f5
+2	44	1684418905442548973	CMakeFiles/client.dir/server/server.c.o	31bc2a3c6644075d
+2	92	1684418905489549057	CMakeFiles/client.dir/ui/menu/menu.c.o	fd6f84e93a1065f0
+1	96	1684418905495549068	CMakeFiles/client.dir/main.c.o	8f07f5022fb6275d
+1	103	1684418905500549077	CMakeFiles/client.dir/server/server_list/server_list.c.o	e8309259aa956c0d
+0	105	1684418905503549083	CMakeFiles/client.dir/ui/utils/utils.c.o	55ec4c27691711c3
+2	108	1684418905506549088	CMakeFiles/client.dir/home/alexp/Repos/my_irc_c/lib/user_info/user_info.c.o	a03a105b40b36708
+108	146	1684418905543549154	client	2d5b43f04f31e4a5
+0	47	1684418928662590542	CMakeFiles/client.dir/main.c.o	8f07f5022fb6275d
+48	82	1684418928696590603	client	2d5b43f04f31e4a5

@@ -8,7 +8,7 @@
 #include "../../server/server_list/server_list.h"
 
 #include "../../options.h"
-#include "user_info.h"
+#include "../../../lib/user_info/user_info.h"
 
 bool is_input_valid(char user_input);
 
@@ -22,14 +22,14 @@ bool user_info_file_exists();
 
 bool server_list_exists();
 
-void handle_user_file_exists(UserInfo *user);
+void handle_user_file_exists(user_info_t *user);
 
-void handle_user_name_does_not_exist(UserInfo *user, Options *opts);
+void handle_user_name_does_not_exist(user_info_t *user, Options *opts);
 
-void populate_user(UserInfo *user, Options *opts);
+void populate_user(user_info_t *user, Options *opts);
 
 unsigned int read_server_port() ;
 
 bool ask_user_to_connect();
 
-void ask_user_to_add_server(ServerList *server_list, UserInfo *user);
+void ask_user_to_add_server(server_list_t *server_list, user_info_t *user);
