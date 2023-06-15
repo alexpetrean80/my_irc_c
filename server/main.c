@@ -12,6 +12,7 @@ int main(void) {
   int server_fd;
   struct sockaddr_in server_addr;
 
+
   pthread_t threads[MAX_CLIENT_LIMIT];
   unsigned short thread_count = 0;
 
